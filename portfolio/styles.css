@@ -1,0 +1,65 @@
+/* Color theme 
+Pohja (tumma) #1a1a2e 
+pohja 2. (tumma) #16213e
+card (tumman sininen) #0f3460
+highlight (vaalean punainen) #e94560
+teksti (valkoinen) #f9f9f9
+*/
+
+
+.btn-theme {
+    background-color: #16213e  !important;
+    border-color: #e94560 !important;
+    color: #f9f9f9 !important;
+    width: 130px;
+  }
+.btn-c-active {
+    background-color: #EB3678;
+    color: #f9f9f9;
+    width: 130px;
+}
+  
+.btn-indigo:hover {
+background-color: #EB3678 !important;
+}
+
+.text-white {
+color: #f9f9f9 !important;
+}
+
+.hero-section {
+background-image: url("media/pattern-black-gradient-texture-wallpaper-1be65c2d03e1bf994574abb9dd4c6c70.jpg");
+background-size: cover;            /* Ensures the image covers the entire section */
+background-position: center;       /* Keeps the image centered */
+background-repeat: no-repeat;      /* Prevents the image from repeating */
+background-attachment: fixed;      /* Makes the background stay fixed when scrolling */
+height: 100vh;                     /* Set height to 100% of the viewport height */
+color: #FB773C;
+
+}
+
+.c-bg-dark {
+background: #1a1a2e;
+color: #f9f9f9;
+
+
+}
+.c-nv-bg-dark {
+    background: #16213e ;
+    border: 2px solid #e94560;  /* Set the border color, width, and style */
+    border-radius: 10px 10px 10px 10px;
+    color: #f9f9f9;
+}
+
+.c-card-bg {
+background-color: #16213E;
+border-color: #EB3678;
+color: #f9f9f9;
+}
+
+.c2-card-bg {
+    background-color: #16213E;
+    border-color: #EB3678;
+    color: #f9f9f9;
+    overflow:hidden;
+}
