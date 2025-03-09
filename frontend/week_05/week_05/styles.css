@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "navbar"
+        "container"
+        "text"
+        "footer";
+    grid-template-rows: 80px auto auto auto 60px;
+    /* Header 80px navbar 80px container 1fr text 1fr footer 60px  */
+    
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+    
+
+
+}
+.container {
+    /* Enabloidaan flexbox */
+    grid-area: container;
+    display: flex;
+    /* mahdollistetaan itemeiden liikkua toiselle riville */
+    flex-wrap: wrap;
+    /* keskitetään itemit */
+    justify-content: center;
+    /* laitetaan väli itemeille jotta eivät ole aivan yhdessä. */
+    gap: 10px; 
+}
+
+.box {
+    /* Säädetään paljonko kuva voi kasvaa pienetyä ja missäkohdassa se loppuu. grow, shrink, min width */
+    flex: 1, 1, 50px;
+    /* Keskitetään kuvat keskelle */
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+}
+
+.navbar {
+    grid-area: navbar;
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 80px;
+    width: 100%;
+    
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin: 0 15px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 2vh;
+}
+
+.menu a:hover {
+    background-color: blue;
+    border-radius: 1vh;
+}
+
+/* Tässä on se, että kun näytön koko osuu 748px ja pienemmäski, navigaatio rivi menee keskitetyksi. */
+
+
+h3 {
+    text-align: center;
+    margin: 50px;
+}
+
+p {
+    width: 80%;
+    padding-bottom: 3vh;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+.header {
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.txt {
+    grid-area: container;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 748px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "navbar navbar"
+            "container text"
+            "footer footer";
+        
+    }
+
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Patrik Verho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="c-bg-dark d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+<div class="collapse " id="navbarToggleExternalContent">
+    <div class="c-nv-bg-dark p-4">
+        <h5 class="h4 my-8">Navigation menu</h5>
+
+        <!-- Navigation menu (foldable) -->
+        <div class="row"> 
+            <div class="col-md-6">
+                <input class="btn btn-theme btn-lg my-3" type="button" value="Home" onclick="window.location.href='index.html';">
+            </div>
+        </div>                  
+        <div class="row">
+            <div class="col-md-6">
+                <input class="btn btn-c-active btn-lg mb-3" type="button" value="About" onclick="window.location.href='about.html';">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="btn btn-theme btn-lg mb-3" type="button" value="Skills" onclick="window.location.href='skills.html';">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="btn btn-theme btn-lg mb-3" type="button" value="projects" onclick="window.location.href='projects.html';">
+            </div>
+        </div>
+        <!-- /Navigation menu (foldable)-->
+    </div>
+</div>
+
+<nav class="navbar navbar-dark c-bg-dark">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Button on the left -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Centered Headline -->
+        <div class="flex-grow-1 text-center">
+            <span class="navbar-brand mb-0 h1">About</span>
+        </div>
+    </div>
+</nav>
+<!-- /navbar -->
+
+    <style>
+        .custom-container {
+            width: 95% !important;
+            max-width: 95%;
+        }
+    </style>
+      
+        
+
+
+
+      <div class="container-fluid mt-5 flex-grow-1">
+        <div class="row p-5 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-lg c-card-bg" style="width: 80%; height: auto;">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-12 col-md-3">
+                            <img src="media/default-profile-photo.jpg" 
+                                class="img-fluid rounded-start w-100" 
+                                style=" object-fit: cover;" 
+                                alt="Profile Photo">
+                        </div>
+        
+                        <!-- Text Section -->
+                        <div class="col-12 col-md-9">
+                            <div class="card-body">
+                                <h4 class="card-title">Patrik Verho</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Donec tempus nisl ipsum, vel varius lorem iaculis quis. 
+                                    Morbi hendrerit ut libero nec vulputate. 
+                                    Donec efficitur commodo odio. Donec tellus nisl, 
+                                    gravida sed semper sed, commodo eget sem. Suspendisse 
+                                    eros erat, euismod auctor sollicitudin in, gravida in quam. 
+                                    Class aptent taciti sociosqu ad litora torquent per conubia 
+                                    nostra, per inceptos himenaeos. 
+
+                                    Nulla eget diam eget leo pellentesque ultricies sit amet a 
+                                    diam. Nullam ut augue vitae ipsum porttitor ultrices at in 
+                                    sem. Etiam dolor odio, efficitur in congue at, venenatis id 
+                                    quam. Donec finibus lacinia interdum. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row justify-content-center align-items-stretch"> <!-- Ensures equal height cards -->
+                
+                <!-- First Card -->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg c-card-bg h-100 d-flex flex-column"> <!-- h-100 ensures full height -->
+                        <div class="card-body flex-grow-1"> <!-- flex-grow-1 stretches content -->
+                            <h4 class="card-title">Contact information</h5>
+                            <table class="table text-white">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Name:</th>
+                                        <td>Patrik Verho</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Phone number:</th>
+                                        <td>+358 4512 1212</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Email:</th>
+                                        <td>Patrik.Verho@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Location:</th>
+                                        <td>Finland</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Card -->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg c-card-bg h-100 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                            <h4 class="card-title">Bio</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Mauris at pharetra justo. Fusce et mi dapibus, 
+                                luctus augue vitae, facilisis lorem. Nunc elementum dictum 
+                                vehicula. Etiam tortor leo, dictum eget purus et, 
+                                viverra accumsan nisi. Ut id augue dignissim, auctor mi vel, 
+                                dapibus mi. Vivamus ullamcorper lectus vitae ligula commodo. </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div> <!-- Closing row -->
+
+            <div class="row justify-content-center align-items-stretch"> <!-- Ensures equal height cards -->
+                
+                <!-- First Card -->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg c-card-bg h-100 d-flex flex-column"> <!-- h-100 ensures full height -->
+                        <div class="card-body flex-grow-1"> <!-- flex-grow-1 stretches content -->
+                            <h4 class="card-title">Certifications</h4>
+                            <table class="table text-white">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">About</th>
+                                    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <th scope="row">CCNA</th>
+                                        <td>Cisco Certified Network Associate.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <th scope="row">ATK-ajokortti</th>
+                                        <td>Wroom wroom but on PC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <th scope="row">Illuminati certificate</th>
+                                        <td>World domination</td>
+                                    </tr>
+                                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Card -->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg c-card-bg h-100 d-flex flex-column">
+                        <div class="card-body flex-grow-1">
+                            <h4 class="card-title">Education</h5>
+                                <table class="table text-white">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Degree</th>
+                                        <th scope="col">School</th>
+                                        
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <th scope="row">Primary School</th>
+                                            <td>Kämmenniemen koulu</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <th scope="row">Secondary education</th>
+                                            <td>Tampereen teknillinen lukio</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <th scope="row">Lower university degree</th>
+                                            <td>Tampereen ammattikorkeakoulu</td>
+                                        </tr>
+                                                                        
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+        
+            </div> <!-- Closing row -->
+
+        </div> <!-- Closing container -->
+    </div>
+
+    <footer class="c-bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-2">Follow me on</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://facebook.com" class="text-light fs-4" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com" class="text-light fs-4" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="text-light fs-4" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" class="text-light fs-4" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <p class="mt-3">&copy; 2025 All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

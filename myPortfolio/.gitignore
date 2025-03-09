@@ -1,0 +1,25 @@
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+Thumbs.db
+*.log
+*.cache
+npm-debug.log
+yarn-error.log
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Ignore dependency and package files
+package-lock.json
+yarn.lock
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
